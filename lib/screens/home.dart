@@ -20,6 +20,7 @@ class Home extends StatelessWidget {
             height: 40,
             width: 40,
             child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
               child: Image.asset('asset/images/about.jpg'),
             ),
           )
