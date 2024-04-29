@@ -22,7 +22,12 @@ class Home extends StatelessWidget {
                     Icons.search,
                     color: tdBlack,
                     size: 20,
-                  )),
+                  ),
+                  prefixIconConstraints:
+                      BoxConstraints(maxHeight: 20, minWidth: 25),
+                  border: InputBorder.none,
+                  hintText: "Search",
+                  hintStyle: TextStyle(color: tdGrey)),
             ),
           )
         ]),
