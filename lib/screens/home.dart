@@ -9,7 +9,8 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: tdBGColor,
-        title: Row(children: [
+        title:
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Icon(
             Icons.menu,
             color: tdBlack,
