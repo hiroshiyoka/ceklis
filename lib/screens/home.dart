@@ -13,6 +13,17 @@ class Home extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         child: Column(children: [
           searchBox(),
+          ListView(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 50, bottom: 20),
+                child: Text(
+                  'Semua kegiatanmu',
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
+                ),
+              )
+            ],
+          )
         ]),
       ),
     );
