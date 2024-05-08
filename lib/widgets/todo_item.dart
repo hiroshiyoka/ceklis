@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+
+import '../model/todo.dart';
 import '../constants/colors.dart';
 
 class ToDoItem extends StatelessWidget {
-  const ToDoItem({Key? key}) : super(key: key);
+  final ToDo todo;
+
+  const ToDoItem({Key? key, required this.todo}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +24,7 @@ class ToDoItem extends StatelessWidget {
           color: tdBlue,
         ),
         title: Text(
-          "Check Mail",
+          todo.todoText!,
           style: TextStyle(
               fontSize: 16,
               color: tdBlack,
