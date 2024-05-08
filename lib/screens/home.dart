@@ -1,4 +1,5 @@
 import 'package:ceklis/constants/colors.dart';
+import 'package:ceklis/widgets/todo_item.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -22,7 +23,8 @@ class Home extends StatelessWidget {
                     'Semua kegiatanmu',
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
                   ),
-                )
+                ),
+                ToDoItem(),
               ],
             ),
           )
