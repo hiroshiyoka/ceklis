@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 import '../model/todo.dart';
@@ -39,6 +41,8 @@ class _HomeState extends State<Home> {
                     for (ToDo todo in todoList)
                       ToDoItem(
                         todo: todo,
+                        onToDoChanged: _handleToDoChange,
+                        onDeleteItem: () {},
                       ),
                   ],
                 ),
@@ -104,6 +108,12 @@ class _HomeState extends State<Home> {
         ],
       ),
     );
+  }
+
+  Void _handleToDoChange(ToDo todo) {
+    setState(() {
+      todo.isDone = !todo.isDone;
+    });
   }
 
   Widget searchBox() {
