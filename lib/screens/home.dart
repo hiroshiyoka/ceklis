@@ -51,6 +51,10 @@ class Home extends StatelessWidget {
                       right: 20,
                       left: 20,
                     ),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: 5,
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       boxShadow: const [
