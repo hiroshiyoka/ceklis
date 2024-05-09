@@ -40,6 +40,21 @@ class Home extends StatelessWidget {
               )
             ]),
           ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Row(
+              children: [
+                Expanded(
+                    child: Container(
+                  margin: EdgeInsets.only(
+                    bottom: 20,
+                    right: 20,
+                    left: 20,
+                  ),
+                ))
+              ],
+            ),
+          )
         ],
       ),
     );
