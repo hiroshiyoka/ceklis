@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
                             fontSize: 30, fontWeight: FontWeight.w500),
                       ),
                     ),
-                    for (ToDo todo in _foundToDo)
+                    for (ToDo todo in _foundToDo.reversed)
                       ToDoItem(
                         todo: todo,
                         onToDoChanged: _handleToDoChange,
