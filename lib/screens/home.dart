@@ -97,7 +97,9 @@ class _HomeState extends State<Home> {
                       fontSize: 40,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    _addToDoItem(_todoController.text);
+                  },
                   style: ElevatedButton.styleFrom(
                     primary: tdBlue,
                     minimumSize: Size(60, 60),
